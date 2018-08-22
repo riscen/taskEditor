@@ -1,0 +1,19 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+#update-task {
+  float: left;
+  width: 40%;
+  text-align: left;
+}
+
+#task-view {
+  float: right;
+  width: 60%;
+}
+
+.date-picker {
+  display: inline-block;
+}

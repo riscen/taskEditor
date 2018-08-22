@@ -1,2 +1,0 @@
-# taskEditor
-Created with CodeSandbox
