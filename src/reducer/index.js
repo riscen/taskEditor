@@ -4,6 +4,7 @@ import {
   UPDATE_TASK,
   REMOVE_TASK
 } from "../actions/constants";
+import { updateTasks } from "./util";
 
 const initialState = {
   tasks: [],
@@ -24,16 +25,8 @@ const taskReducer = (state = initialState, action) => {
       });
     case UPDATE_TASK:
       console.log("\tUpdate task");
-      let index, tasks;
-      index = state.tasks.findIndex(
-        task => task.taskId === action.payload.taskId
-      );
-      tasks = [...state.tasks.slice(0, index), action.payload];
-      if (index < state.tasks.length) {
-        tasks = [...tasks, ...state.tasks.slice(index + 1)];
-      }
       return Object.assign({}, state, {
-        tasks: tasks
+        tasks: updateTasks(action.payload, state.tasks)
       });
     case REMOVE_TASK:
       console.log("\tRemove task");
