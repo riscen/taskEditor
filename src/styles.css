@@ -1,19 +1,150 @@
-.App {
+body {
   font-family: sans-serif;
+  padding: 5% 10% 10% 10%;
+}
+
+.title-container {
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  padding: 10px;
+}
+
+.app-content {
+  width: 100%;
+}
+
+.inline {
+  display: inline-block;
+}
+
+.center {
   text-align: center;
 }
 
-#update-task {
+.submit-btn {
+  margin: 5px;
+}
+
+/*******TaskForm*******/
+.form-container {
   float: left;
-  width: 40%;
-  text-align: left;
+  width: 45%;
+  border-right: 1px solid gray;
 }
 
-#task-view {
-  float: right;
-  width: 60%;
+.form-field {
+  width: 90%;
+  padding: 5px;
 }
 
-.date-picker {
+.input-label {
+  max-width: 30%;
   display: inline-block;
+}
+
+.input-field {
+  width: 100%;
+}
+
+.submit-btn {
+  text-align: center;
+}
+
+.btn {
+  transition: 0.2s;
+  border: solid 1px green;
+  border-radius: 5px;
+  background: transparent;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn:hover {
+  transition: 0.2s;
+  background: green;
+  color: white;
+}
+
+/*******TaskTable********/
+.table-container {
+  float: right;
+  width: 50%;
+}
+
+.task-table {
+  width: 100%;
+  padding: 2%;
+  border-collapse: collapse;
+}
+
+tr,
+th,
+td {
+  border: 1px solid black;
+  text-align: center;
+}
+
+th,
+td {
+  width: 50%;
+}
+
+thead {
+  background: darkgray;
+}
+
+.data-row {
+  cursor: pointer;
+}
+
+.prior-1 {
+  background: #e5efff;
+}
+
+.prior-2 {
+  background: #feffe5;
+}
+
+.prior-3 {
+  background: #ffe5e5;
+}
+
+/******Modal*********/
+.modal {
+  margin: 0;
+}
+
+.modal > .header {
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  padding: 10px;
+  border-bottom: 1px solid gray;
+}
+
+.modal > .content {
+  padding: 20px;
+}
+
+.update-btn {
+  border: solid 1px blue;
+}
+
+.update-btn:hover {
+  background: blue;
+}
+
+.remove-btn {
+  border: solid 1px red;
+}
+
+.remove-btn:hover {
+  background: red;
+}
+
+.react-datepicker-wrapper {
+  display: inline-block;
+  width: 100%;
 }

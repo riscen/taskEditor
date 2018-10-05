@@ -1,18 +1,26 @@
+/**
+ * Task editor
+ * you can:
+ *  Upload a task
+ *  Update a task
+ *  Remove a task
+ *  See all tasks
+ *  Show task information
+ * All these actions are handle with Redux
+ */
+
 import React from "react";
 import ReactDOM from "react-dom";
+import { Provider } from "react-redux";
+import store from "./store";
 
-import UpdateTask from "./components/UpdateTask";
+import App from "./components/App";
 import "./styles.css";
 
-function App() {
-  return (
-    <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
-      <UpdateTask />
-    </div>
-  );
-}
-
 const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
+ReactDOM.render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  rootElement
+);
