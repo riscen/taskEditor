@@ -13,7 +13,7 @@ export const getActionObj = (actionType = "", payload = {}) => {
   const date = new Date();
   return {
     type: actionType,
-    time: `${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`,
+    time: date.toLocaleTimeString(),
     payload: payload
   };
 };
