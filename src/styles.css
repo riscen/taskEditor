@@ -148,3 +148,27 @@ thead {
   display: inline-block;
   width: 100%;
 }
+
+/*******Action table********/
+.action-table-container {
+  clear: both;
+}
+
+.action-table-container {
+  padding-top: 10px;
+  border-top: 1px solid gray;
+  width: 100%;
+}
+
+.action-table {
+  width: 100%;
+  padding: 2%;
+  border-collapse: collapse;
+}
+
+.action-type-cell {
+  width: 33%;
+}
+.action-time-cell {
+  width: 33%;
+}

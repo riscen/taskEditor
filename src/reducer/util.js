@@ -8,3 +8,12 @@ export const updateTasks = (task, tasks) => {
   }
   return newTasks;
 };
+
+export const getActionObj = (actionType = "", payload = {}) => {
+  const date = new Date();
+  return {
+    type: actionType,
+    time: `${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`,
+    payload: payload
+  };
+};

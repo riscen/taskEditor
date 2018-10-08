@@ -87,7 +87,7 @@ class TaskForm extends Component {
     return (
       <div className="form-container">
         <div className="title-container">
-          <span className="title">Task info</span>
+          <span className="title">Task form</span>
         </div>
         <form onSubmit={this.handleSubmit}>
           <div className="form-field">

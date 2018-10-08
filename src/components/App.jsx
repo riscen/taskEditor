@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import TaskForm from "./TaskForm";
 import TaskTable from "./TaskTable";
+import ActionTable from "./ActionTable";
 
 class App extends Component {
   render() {
@@ -12,6 +13,9 @@ class App extends Component {
         <div className="app-content">
           <TaskForm />
           <TaskTable />
+        </div>
+        <div>
+          <ActionTable />
         </div>
       </div>
     );

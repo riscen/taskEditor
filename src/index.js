@@ -7,6 +7,10 @@
  *  See all tasks
  *  Show task information
  * All these actions are handle with Redux
+ * Add action table
+ * When a Redux action is made, show it in a table
+ * to keep record of all the actions that has been made.
+ * An action has action type and time of execution.
  */
 
 import React from "react";
